@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maillot 1998 France - À L'ANCIENNE!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo du site" class="logo">
+        <h1><a href="index.html">À L'ANCIENNE!</a></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html#collection">Collection</a></li>
+                <li><a href="index.html#about">À propos</a></li>
+                <li><a href="index.html#feedback">Feedback</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="product-detail">
+        <div class="product-container">
+            <div class="product-image">
+                <img src="maillot1.jpg" alt="Maillot 1998 France">
+            </div>
+            <div class="product-info">
+                <h2>Maillot 1998 France</h2>
+                <p><strong>Prix :</strong> 79.99€</p>
+                <p><strong>Histoire :</strong> Souviens-toi de 1998... Zidane, 3-0 contre le Brésil, et un pays qui danse toute la nuit ! Ce maillot est un symbole de victoire, de fierté, et d’innombrables souvenirs. Enfile-le, et ressens la magie d’un moment légendaire.</p>
+
+                <form>
+                    <label for="size">Choisis ta taille :</label>
+                    <select id="size" name="size">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+                    <button type="button" class="btn" onclick="showAddToCartMessage()">Ajouter au panier</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 À L'ANCIENNE!. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        function showAddToCartMessage() {
+            alert("C'est ajouté au panier, mais on parle pas de basket ! 🏀");
+        }
+    </script>
+</body>
+</html>

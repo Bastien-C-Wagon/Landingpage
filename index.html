@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À L'ANCIENNE! - Maillots de légende</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo du site" class="logo">
+        <h1><a href="index.html">À L'ANCIENNE!</a></h1>
+        <nav>
+            <ul>
+                <li><a href="#collection">Collection</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Revivez les moments de gloire du foot</h2>
+            <p>Parce que les maillots d’aujourd’hui, c’est bien, mais les classiques, c’est mieux ! Découvrez notre collection de maillots vintage pour les vrais de vrais.</p>
+            <a href="#collection" class="btn">Voir la collection</a>
+        </div>
+    </section>
+
+    <section id="collection" class="collection">
+        <h2>Nos maillots de légende</h2>
+        <div class="products">
+            <div class="product">
+                <a href="maillot1.html">
+                    <img src="maillot1.jpg" alt="Maillot vintage 1">
+                    <h3>Maillot 1998 France</h3>
+                </a>
+                <p>Prix: 79.99€ – L'année où la France est devenue une légende. Rien que ça.</p>
+            </div>
+            <div class="product">
+                <a href="maillot2.html">
+                    <img src="maillot2.jpg" alt="Maillot vintage 2">
+                    <h3>Maillot 1986 Argentine</h3>
+                </a>
+                <p>Prix: 89.99€ – Tu veux marquer des buts comme Maradona ? Bon, le maillot aide un peu…</p>
+            </div>
+            <div class="product">
+                <a href="maillot3.html">
+                    <img src="maillot3.jpg" alt="Maillot vintage 3">
+                    <h3>Maillot 2002 Brésil</h3>
+                </a>
+                <p>Prix: 69.99€ – Ronaldo. Rivaldo. Ronaldinho. Et toi ? Il manque plus que toi !</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="feedback" class="feedback">
+        <h2>Votre avis compte !</h2>
+        <p>Aidez-nous à rendre le site encore meilleur en répondant à quelques questions !</p>
+        
+        <form>
+            <label for="satisfaction">Comment évalueriez-vous votre expérience générale sur le site ? (sur 5)</label>
+            <select id="satisfaction" name="satisfaction" required>
+                <option value="5">5 - Excellent</option>
+                <option value="4">4 - Très bien</option>
+                <option value="3">3 - Correct</option>
+                <option value="2">2 - À améliorer</option>
+                <option value="1">1 - Mauvaise</option>
+            </select><br>
+
+            <label for="navigation">Le site est-il facile à naviguer ?</label>
+            <select id="navigation" name="navigation" required>
+                <option value="yes">Oui</option>
+                <option value="no">Non</option>
+            </select><br>
+
+            <label for="products">Les maillots proposés sont-ils intéressants pour vous ?</label>
+            <select id="products" name="products" required>
+                <option value="yes">Oui, ils sont super !</option>
+                <option value="no">Non, il manque des maillots que j'aimerais</option>
+            </select><br>
+
+            <label for="design">Que pensez-vous du design vintage du site ?</label>
+            <select id="design" name="design" required>
+                <option value="amazing">Incroyable, j'adore !</option>
+                <option value="good">Pas mal</option>
+                <option value="okay">Ça pourrait être mieux</option>
+                <option value="bad">Je n'aime pas</option>
+            </select><br>
+
+            <label for="comments">Que pourrions-nous améliorer ? (Suggestions, avis, etc.)</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Vos suggestions sont les bienvenues !"></textarea><br>
+
+            <div class="button-container">
+                <button type="button" class="btn" onclick="showFunnyMessage()">Envoyer vos réponses</button>
+            </div>
+        </form>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contactez-nous</h2>
+        <p>Email: contact@alancienne.com</p>
+        <p>Téléphone: 07 62 89 69 11</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 À L'ANCIENNE!. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        function showFunnyMessage() {
+            alert("Merci pour ton feedback, champion(ne) ! On va bosser dur (ou presque) pour que ce site soit aussi légendaire qu'une finale de Coupe du Monde !");
+        }
+    </script>
+</body>
+</html>
